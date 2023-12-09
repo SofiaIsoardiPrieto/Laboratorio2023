@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F639031-76C1-4D8D-A638-CC42D41D8D0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratorio2023.Windows</RootNamespace>
+    <AssemblyName>Laboratorio2023.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBuscarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarFecha.Designer.cs">
+      <DependentUpon>FrmBuscarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamenes.Designer.cs">
+      <DependentUpon>FrmExamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRangos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRangos.Designer.cs">
+      <DependentUpon>FrmRangos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoMediciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoMediciones.Designer.cs">
+      <DependentUpon>FrmTipoMediciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoMedicionAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoMedicionAE.Designer.cs">
+      <DependentUpon>FrmTipoMedicionAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoRangos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoRangos.Designer.cs">
+      <DependentUpon>FrmTipoRangos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPruebas.Designer.cs">
+      <DependentUpon>FrmPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPruebaAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPruebaAE.Designer.cs">
+      <DependentUpon>FrmPruebaAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamenPruebasAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamenPruebasAE.Designer.cs">
+      <DependentUpon>FrmExamenPruebasAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamenAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamenAE.Designer.cs">
+      <DependentUpon>FrmExamenAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTipoRangoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTipoRangoAE.Designer.cs">
+      <DependentUpon>FrmTipoRangoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRangoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRangoAE.Designer.cs">
+      <DependentUpon>FrmRangoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedicoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedicoAE.Designer.cs">
+      <DependentUpon>FrmMedicoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosTecnicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosTecnicos.Designer.cs">
+      <DependentUpon>FrmDatosTecnicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProtocoloAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProtocoloAE.Designer.cs">
+      <DependentUpon>FrmProtocoloAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExamenPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExamenPruebas.Designer.cs">
+      <DependentUpon>FrmExamenPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultadoAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultadoAE.Designer.cs">
+      <DependentUpon>FrmResultadoAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultados.Designer.cs">
+      <DependentUpon>FrmResultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProtocolos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProtocolos.Designer.cs">
+      <DependentUpon>FrmProtocolos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPacientes.Designer.cs">
+      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPacienteAE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPacienteAE.Designer.cs">
+      <DependentUpon>FrmPacienteAE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarNombre.Designer.cs">
+      <DependentUpon>FrmBuscarNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\CombosHelper.cs" />
+    <Compile Include="Helpers\FormHelper.cs" />
+    <Compile Include="Helpers\GridHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBuscarFecha.resx">
+      <DependentUpon>FrmBuscarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamenes.resx">
+      <DependentUpon>FrmExamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRangos.resx">
+      <DependentUpon>FrmRangos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoMediciones.resx">
+      <DependentUpon>FrmTipoMediciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoMedicionAE.resx">
+      <DependentUpon>FrmTipoMedicionAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoRangos.resx">
+      <DependentUpon>FrmTipoRangos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPruebas.resx">
+      <DependentUpon>FrmPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPruebaAE.resx">
+      <DependentUpon>FrmPruebaAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamenPruebasAE.resx">
+      <DependentUpon>FrmExamenPruebasAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamenAE.resx">
+      <DependentUpon>FrmExamenAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTipoRangoAE.resx">
+      <DependentUpon>FrmTipoRangoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRangoAE.resx">
+      <DependentUpon>FrmRangoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicoAE.resx">
+      <DependentUpon>FrmMedicoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosTecnicos.resx">
+      <DependentUpon>FrmDatosTecnicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProtocoloAE.resx">
+      <DependentUpon>FrmProtocoloAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExamenPruebas.resx">
+      <DependentUpon>FrmExamenPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultadoAE.resx">
+      <DependentUpon>FrmResultadoAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultados.resx">
+      <DependentUpon>FrmResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProtocolos.resx">
+      <DependentUpon>FrmProtocolos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPacientes.resx">
+      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPacienteAE.resx">
+      <DependentUpon>FrmPacienteAE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarNombre.resx">
+      <DependentUpon>FrmBuscarNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Laboratorio2023.Entidades\Laboratorio2023.Entidades.csproj">
+      <Project>{6e1e667c-cf97-41c2-ab6e-1219260da3a6}</Project>
+      <Name>Laboratorio2023.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Laboratorio2023.Servicios\Laboratorio2023.Servicios.csproj">
+      <Project>{d1f51b17-ac11-4040-a0dc-44a8cbfeb1c7}</Project>
+      <Name>Laboratorio2023.Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood_sample_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_tube_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protocolo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood_sample_36px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checkmark_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_36px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_file_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_down_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout_rounded_left_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuevo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\protocolo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test_tube_36px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unavailable_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double_left_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\double_right_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtered_file_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update_file_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_can_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut_25px1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
